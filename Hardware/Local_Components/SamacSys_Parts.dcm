@@ -1,0 +1,39 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP TDSG5160
+D DISPLAY 7SEG 0.51" SGL GRN 10DIP
+K
+F https://www.digikey.ph/en/products/detail/vishay-semiconductor-opto-division/TDSG5160/4074546?msockid=39f1ec84d77b6f4428b7f904d6676eed
+$ENDCMP
+#
+$CMP SC32S-7PF20PPM
+D 32.768 kHz +/-20ppm Crystal 7pF 70 kOhms 2-SMD, No Lead
+K
+F 
+$ENDCMP
+#
+$CMP EC111012010H
+D Electromechanical Switch Self-Return Switch 0.01A 5VDC - Trays 11mm Size Metal Shaft Type EC11 Series
+K
+F https://tech.alpsalpine.com/prod/e/html/encoder/incremental/ec11/ec111012010h.html
+$ENDCMP
+#
+$CMP EXB-2HV471JV
+D PANASONIC - EXB2HV471JV - RESISTOR,CVEX ARRAY,0402X8, 470R 5%
+K
+F 
+$ENDCMP
+#
+$CMP G6DN-1A-L_DC5
+D OMRON ELECTRONIC COMPONENTS - G6DN-1A-L DC5. - POWER RELAY, SPST-NO, 5A, 250VAC, TH
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/DKDS-9/177177.pdf
+$ENDCMP
+#
+#End Doc Library

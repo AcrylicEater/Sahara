@@ -1,0 +1,164 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model NE555DR
+#/6648/2/2.37/8/4/Integrated Circuit
+DEF NE555DR IC 0 30 Y Y 1 F N
+F0 "IC" 1050 600 50 H V L CNN
+F1 "NE555DR" 1050 500 50 H V L CNN
+F2 "SOIC127P600X175-8N" 1050 400 50 H I L CNN
+F3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" 1050 300 50 H I L CNN
+F4 "Single Precision Timer" 1050 200 50 H I L CNN "Description"
+F5 "1.75" 1050 100 50 H I L CNN "Height"
+F6 "Texas Instruments" 1050 0 50 H I L CNN "Manufacturer_Name"
+F7 "NE555DR" 1050 -100 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-NE555DR" 1050 -200 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-NE555DR" 1050 -300 50 H I L CNN "Mouser Price/Stock"
+F10 "1218414" 1050 -400 50 H I L CNN "RS Part Number"
+F11 "http//uk.rs-online.com/web/p/products/1218414" 1050 -500 50 H I L CNN "RS Price/Stock"
+DRAW
+X GND 1 600 -1000 200 U 50 50 0 0 B
+X TRIG 2 0 -400 200 R 50 50 0 0 B
+X OUT 3 1200 -200 200 L 50 50 0 0 B
+X ~RESET 4 0 0 200 R 50 50 0 0 B
+X CONT 5 500 600 200 D 50 50 0 0 B
+X THRES 6 0 -300 200 R 50 50 0 0 B
+X DISCH 7 0 -100 200 R 50 50 0 0 B
+X VCC 8 700 600 200 D 50 50 0 0 B
+P 5 0 1 6 200 400 1000 400 1000 -800 200 -800 200 400 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model TDSG5160
+#/183374/1413924/2.50/10/3/Display
+DEF TDSG5160 DS 0 30 Y Y 1 F N
+F0 "DS" 1250 300 50 H V L CNN
+F1 "TDSG5160" 1250 200 50 H V L CNN
+F2 "TDSG5160" 1250 100 50 H I L CNN
+F3 "https://www.vishay.com/docs/83126/tdsg51.pdf" 1250 0 50 H I L CNN
+F4 "Display Segmented 1DIGIT 8LED Green" 1250 -100 50 H I L CNN "Description"
+F5 "7.1" 1250 -200 50 H I L CNN "Height"
+F6 "78-TDSG5160" 1250 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TDSG5160?qs=%2Fjqivxn91cc3TBwshn0ZZA%3D%3D" 1250 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Vishay" 1250 -500 50 H I L CNN "Manufacturer_Name"
+F9 "TDSG5160" 1250 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X E 1 0 0 200 R 50 50 0 0 P
+X D 2 0 -100 200 R 50 50 0 0 P
+X A_(C)_1 3 0 -200 200 R 50 50 0 0 P
+X C 4 0 -300 200 R 50 50 0 0 P
+X DP 5 0 -400 200 R 50 50 0 0 P
+X B 6 1400 -400 200 L 50 50 0 0 P
+X A 7 1400 -300 200 L 50 50 0 0 P
+X A_(C)_2 8 1400 -200 200 L 50 50 0 0 P
+X F 9 1400 -100 200 L 50 50 0 0 P
+X G 10 1400 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1200 100 1200 -500 200 -500 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model SC32S-7PF20PPM
+#/11999804/1413924/2.50/2/4/Crystal or Oscillator
+DEF SC32S-7PF20PPM Y 0 30 Y Y 1 F N
+F0 "Y" 350 250 50 H V L CNN
+F1 "SC32S-7PF20PPM" 350 150 50 H V L CNN
+F2 "SC32S7PF20PPM" 350 50 50 H I L CNN
+F3 "" 350 -50 50 H I L CNN
+F4 "32.768 kHz +/-20ppm Crystal 7pF 70 kOhms 2-SMD, No Lead" 350 -150 50 H I L CNN "Description"
+F5 "" 350 -250 50 H I L CNN "Height"
+F6 "628-SC32S-7PF20PPM" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Seiko-Semiconductors/SC32S-7PF20PPM?qs=3CPZD7qAgigZSR1ASVAS6w%3D%3D" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Seiko Semiconductors" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "SC32S-7PF20PPM" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 400 0 100 L 50 50 0 0 P
+P 2 0 1 6 120 100 120 -100 N
+P 2 0 1 6 280 100 280 -100 N
+P 5 0 1 6 160 140 160 -140 240 -140 240 140 160 140 N
+P 2 0 1 6 280 0 300 0 N
+P 2 0 1 6 120 0 100 0 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model EC111012010H
+#/12334315/1413924/2.50/7/3/Variable Resistor
+DEF EC111012010H VR 0 30 Y Y 1 F N
+F0 "VR" 850 600 50 H V L CNN
+F1 "EC111012010H" 850 500 50 H V L CNN
+F2 "EC111012010H" 850 400 50 H I L CNN
+F3 "https://tech.alpsalpine.com/prod/e/html/encoder/incremental/ec11/ec111012010h.html" 850 300 50 H I L CNN
+F4 "Electromechanical Switch Self-Return Switch 0.01A 5VDC - Trays 11mm Size Metal Shaft Type EC11 Series" 850 200 50 H I L CNN "Description"
+F5 "25" 850 100 50 H I L CNN "Height"
+F6 "688-EC111012010H" 850 0 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Alps-Alpine/EC111012010H?qs=YMSFtX0bdJDrbcKzFtERqA%3D%3D" 850 -100 50 H I L CNN "Mouser Price/Stock"
+F8 "ALPS Electric" 850 -200 50 H I L CNN "Manufacturer_Name"
+F9 "EC111012010H" 850 -300 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X CW A1 400 -700 200 U 50 50 0 0 P
+X CCW B1 600 -700 200 U 50 50 0 0 P
+X WIPER C1 500 -700 200 U 50 50 0 0 P
+X COM D1 400 600 200 D 50 50 0 0 P
+X NO E1 500 600 200 D 50 50 0 0 P
+X MH1 MH1 0 0 200 R 50 50 0 0 P
+X MH2 MH2 1000 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 400 800 400 800 -500 200 -500 200 400 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model EXB-2HV471JV
+#/973293/1413924/2.50/16/4/Resistor Network
+DEF EXB-2HV471JV RN 0 30 Y Y 1 F N
+F0 "RN" 750 300 50 H V L CNN
+F1 "EXB-2HV471JV" 750 200 50 H V L CNN
+F2 "EXB2HV_1" 750 100 50 H I L CNN
+F3 "" 750 0 50 H I L CNN
+F4 "PANASONIC - EXB2HV471JV - RESISTOR,CVEX ARRAY,0402X8, 470R 5%" 750 -100 50 H I L CNN "Description"
+F5 "" 750 -200 50 H I L CNN "Height"
+F6 "667-EXB-2HV471JV" 750 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Panasonic/EXB-2HV471JV?qs=oE3VwAv%2FYtlWJ3foio2aBA%3D%3D" 750 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Panasonic" 750 -500 50 H I L CNN "Manufacturer_Name"
+F9 "EXB-2HV471JV" 750 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+X 3 3 0 -200 200 R 50 50 0 0 P
+X 4 4 0 -300 200 R 50 50 0 0 P
+X 5 5 0 -400 200 R 50 50 0 0 P
+X 6 6 0 -500 200 R 50 50 0 0 P
+X 7 7 0 -600 200 R 50 50 0 0 P
+X 8 8 0 -700 200 R 50 50 0 0 P
+X 9 9 900 -700 200 L 50 50 0 0 P
+X 10 10 900 -600 200 L 50 50 0 0 P
+X 11 11 900 -500 200 L 50 50 0 0 P
+X 12 12 900 -400 200 L 50 50 0 0 P
+X 13 13 900 -300 200 L 50 50 0 0 P
+X 14 14 900 -200 200 L 50 50 0 0 P
+X 15 15 900 -100 200 L 50 50 0 0 P
+X 16 16 900 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 700 100 700 -800 200 -800 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model G6DN-1A-L_DC5
+#/769080/1413924/2.50/4/4/Relay or Contactor
+DEF G6DN-1A-L_DC5 K 0 30 Y Y 1 F N
+F0 "K" 850 300 50 H V L CNN
+F1 "G6DN-1A-L_DC5" 850 200 50 H V L CNN
+F2 "G6DN-1A-L" 850 100 50 H I L CNN
+F3 "https://datasheet.datasheetarchive.com/originals/distributors/DKDS-9/177177.pdf" 850 0 50 H I L CNN
+F4 "OMRON ELECTRONIC COMPONENTS - G6DN-1A-L DC5. - POWER RELAY, SPST-NO, 5A, 250VAC, TH" 850 -100 50 H I L CNN "Description"
+F5 "" 850 -200 50 H I L CNN "Height"
+F6 "653-G6DN-1A-LDC5" 850 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G6DN-1A-L-DC5?qs=Mv7BduZupUhZB902RCoZGQ%3D%3D" 850 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Omron Electronics" 850 -500 50 H I L CNN "Manufacturer_Name"
+F9 "G6DN-1A-L DC5" 850 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X COIL_1 1 0 0 200 R 50 50 0 0 P
+X COIL_2 2 0 -100 200 R 50 50 0 0 P
+X NO 5 0 -200 200 R 50 50 0 0 P
+X COM 8 0 -300 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 800 100 800 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
