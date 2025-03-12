@@ -5,6 +5,126 @@
 	(uuid "23fac9c8-8685-42a9-b7ee-28d486c748eb")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Conn_01x01_Socket"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01_Socket"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_Socket_1_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0.508)
+					(mid -0.5058 0)
+					(end 0 -0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_01x03"
 			(pin_names
 				(offset 1.016) hide)
@@ -164,6 +284,142 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -469,6 +725,166 @@
 				)
 			)
 		)
+		(symbol "Device:Heater"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Heater"
+				(at -2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistive heater"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "heater R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Heater_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.524) (xy 1.016 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.524) (xy -1.016 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -0.508) (xy -1.016 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0.508) (xy -1.016 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Heater_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R_US"
 			(pin_numbers hide)
 			(pin_names
@@ -639,7 +1055,244 @@
 				)
 			)
 		)
-		(symbol "Isolator:CNY17-4"
+		(symbol "Device:Varistor_US"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at 3.175 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Varistor_US"
+				(at -3.175 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Voltage dependent resistor, US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "kicad_builtin_varistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=A 2=B"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Params" "threshold=1k"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "VDR resistance"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "RV_* Varistor*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Varistor_US_0_0"
+				(text "U"
+					(at -1.778 -2.032 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "Varistor_US_0_1"
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 2.54) (xy -1.905 1.27) (xy 1.905 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Varistor_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Isolator:4N35"
 			(pin_names
 				(offset 1.016)
 			)
@@ -655,7 +1308,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "CNY17-4"
+			(property "Value" "4N35"
 				(at 0 5.08 0)
 				(effects
 					(font
@@ -664,7 +1317,18 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_DIP:DIP-6_W7.62mm"
+				(at -5.08 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/81181/4n35.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -674,17 +1338,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.vishay.com/docs/83606/cny17.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "DC Optocoupler Base Connected, Vce 70V, CTR 160-320%, Viso 5000V (RMS), DIP6"
+			(property "Description" "Optocoupler, Phototransistor Output, with Base Connection, Vce 70V, CTR 100%, Viso 5000V, DIP6"
 				(at 0 0 0)
 				(effects
 					(font
@@ -702,7 +1356,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "DIP*W7.62mm* DIP*W10.16mm* SMDIP*W9.53mm*"
+			(property "ki_fp_filters" "DIP*W7.62mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -711,7 +1365,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "CNY17-4_0_1"
+			(symbol "4N35_0_1"
 				(rectangle
 					(start -5.08 3.81)
 					(end 5.08 -3.81)
@@ -725,7 +1379,7 @@
 				)
 				(polyline
 					(pts
-						(xy -3.175 -0.635) (xy -1.905 -0.635)
+						(xy -3.81 -0.635) (xy -2.54 -0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -737,7 +1391,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.921 -1.397) (xy 4.064 -2.54)
+						(xy 2.667 -1.397) (xy 3.81 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -749,7 +1403,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.921 -1.27) (xy 1.905 -1.27)
+						(xy 2.667 -1.143) (xy 3.81 0)
 					)
 					(stroke
 						(width 0)
@@ -761,7 +1415,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.921 -1.143) (xy 4.064 0)
+						(xy 3.81 -2.54) (xy 5.08 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -773,7 +1427,7 @@
 				)
 				(polyline
 					(pts
-						(xy 4.064 -2.54) (xy 5.08 -2.54)
+						(xy 3.81 0) (xy 5.08 0)
 					)
 					(stroke
 						(width 0)
@@ -785,55 +1439,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 0) (xy 4.064 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 2.54) (xy -2.54 2.54) (xy -2.54 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -0.635) (xy -2.54 -2.54) (xy -5.08 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 -1.27) (xy 1.905 2.54) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.921 -0.254) (xy 2.921 -2.286) (xy 2.921 -2.286)
+						(xy 2.667 -0.254) (xy 2.667 -2.286) (xy 2.667 -2.286)
 					)
 					(stroke
 						(width 0.3556)
@@ -845,7 +1451,19 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 -0.635) (xy -3.175 0.635) (xy -1.905 0.635) (xy -2.54 -0.635)
+						(xy -5.08 -2.54) (xy -3.175 -2.54) (xy -3.175 2.54) (xy -5.08 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 -0.635) (xy -3.81 0.635) (xy -2.54 0.635) (xy -3.175 -0.635)
 					)
 					(stroke
 						(width 0.254)
@@ -857,7 +1475,19 @@
 				)
 				(polyline
 					(pts
-						(xy 3.937 -2.413) (xy 3.683 -1.905) (xy 3.429 -2.159) (xy 3.937 -2.413)
+						(xy 3.683 -2.413) (xy 3.429 -1.905) (xy 3.175 -2.159) (xy 3.683 -2.413)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 1.905 2.54) (xy 1.905 -1.27) (xy 2.54 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -892,7 +1522,7 @@
 					)
 				)
 			)
-			(symbol "CNY17-4_1_1"
+			(symbol "4N35_1_1"
 				(pin passive line
 					(at -7.62 2.54 0)
 					(length 2.54)
@@ -994,6 +1624,214 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Motor:Motor_AC"
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "M"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Motor_AC"
+				(at 2.54 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 -2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "AC Motor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "AC Motor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "PinHeader*P2.54mm* TerminalBlock*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Motor_AC_0_0"
+				(arc
+					(start -1.524 -2.794)
+					(mid -0.8654 -3.5217)
+					(end 0 -3.048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -2.032) (xy -1.016 1.016) (xy 0 -1.016) (xy 1.016 1.016) (xy 1.016 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.524 -3.302)
+					(mid 0.85 -2.5503)
+					(end 0 -3.048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Motor_AC_0_1"
+				(circle
+					(center 0 -1.524)
+					(radius 3.2512)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -7.62) (xy 0 -7.112)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -4.7752) (xy 0 -5.1816)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.7272) (xy 0 2.0828)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.032) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Motor_AC_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1766,6 +2604,12 @@
 		)
 	)
 	(junction
+		(at 219.71 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c4fbbde-170c-4dd9-aba7-9d4b05b06a8a")
+	)
+	(junction
 		(at 102.87 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1776,6 +2620,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c41f5b1-9dd8-49e1-97e9-c60ccf2a281f")
+	)
+	(junction
+		(at 210.82 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39b6605b-e1d0-4023-ab32-c2012395218a")
 	)
 	(junction
 		(at 114.3 40.64)
@@ -1794,6 +2644,24 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a64738fa-6878-4660-a9b9-fa4464c535e2")
+	)
+	(junction
+		(at 219.71 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad2768fe-0000-4d42-8e92-65fbaa1c7fc5")
+	)
+	(junction
+		(at 210.82 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b240c82b-5a2e-4e60-95c5-c473f02ebe22")
+	)
+	(junction
+		(at 236.22 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d79ffa55-e599-47e2-b457-4530ea84b965")
 	)
 	(junction
 		(at 114.3 85.09)
@@ -1833,6 +2701,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 95.25) (xy 219.71 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "171c8e05-7b8b-4827-9a6a-505212f38853")
+	)
+	(wire
+		(pts
 			(xy 114.3 85.09) (xy 114.3 88.9)
 		)
 		(stroke
@@ -1860,6 +2738,16 @@
 			(type default)
 		)
 		(uuid "2275c99f-3ec5-40da-b7a3-d1f420eac751")
+	)
+	(wire
+		(pts
+			(xy 195.58 95.25) (xy 210.82 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c8aaad3-f346-4eed-a0c6-40380c1c268a")
 	)
 	(wire
 		(pts
@@ -1923,6 +2811,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 80.01) (xy 219.71 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51bd1c3d-0e92-4122-8f0a-f3e8e6f4e9b6")
+	)
+	(wire
+		(pts
 			(xy 102.87 93.98) (xy 102.87 97.79)
 		)
 		(stroke
@@ -1973,6 +2871,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 90.17) (xy 236.22 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fccb44f-5727-4bb4-8ec0-d0d16d0ccf86")
+	)
+	(wire
+		(pts
 			(xy 114.3 83.82) (xy 114.3 85.09)
 		)
 		(stroke
@@ -1980,6 +2888,16 @@
 			(type default)
 		)
 		(uuid "82b53732-19c3-4c51-bb10-e0e013190206")
+	)
+	(wire
+		(pts
+			(xy 210.82 83.82) (xy 210.82 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86fd0f36-e9fe-4ef9-9415-9e56480aec35")
 	)
 	(wire
 		(pts
@@ -2003,6 +2921,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 80.01) (xy 210.82 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae7f731b-96c5-474c-9363-b14ee8f60135")
+	)
+	(wire
+		(pts
 			(xy 121.92 82.55) (xy 121.92 74.93)
 		)
 		(stroke
@@ -2020,6 +2948,16 @@
 			(type default)
 		)
 		(uuid "c34a6a92-cf49-43c5-a2d2-df9c487e52f3")
+	)
+	(wire
+		(pts
+			(xy 210.82 91.44) (xy 210.82 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3cfe605-6c2b-44d0-ac1d-7208f9c23ca8")
 	)
 	(wire
 		(pts
@@ -2043,6 +2981,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 80.01) (xy 236.22 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c901986a-4a93-414b-a22c-fdd1cd0593e5")
+	)
+	(wire
+		(pts
 			(xy 114.3 99.06) (xy 114.3 105.41)
 		)
 		(stroke
@@ -2050,6 +2998,16 @@
 			(type default)
 		)
 		(uuid "c99a548f-ee25-49dd-b6df-07351ee67fac")
+	)
+	(wire
+		(pts
+			(xy 264.16 95.25) (xy 236.22 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbda66d5-a934-440b-b868-f01521dcebbb")
 	)
 	(wire
 		(pts
@@ -2123,6 +3081,36 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 95.25) (xy 219.71 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0279c6e-91c6-47bd-9427-29cf62940c83")
+	)
+	(wire
+		(pts
+			(xy 219.71 95.25) (xy 219.71 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f53eb7bd-81f7-41b8-8b80-c1f32bfd81fe")
+	)
+	(wire
+		(pts
+			(xy 219.71 78.74) (xy 219.71 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7a0e8b5-36d5-45ec-bb4f-351bb29d1d1b")
+	)
+	(wire
+		(pts
 			(xy 121.92 30.48) (xy 114.3 30.48)
 		)
 		(stroke
@@ -2130,6 +3118,51 @@
 			(type default)
 		)
 		(uuid "feafb639-4f5e-49d8-8dc1-9e6d819c35db")
+	)
+	(rectangle
+		(start 172.72 53.34)
+		(end 280.67 107.95)
+		(stroke
+			(width 0.1)
+			(type dash)
+			(color 0 242 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid c3dead9e-ecdf-47e4-babd-a75e457fddb4)
+	)
+	(text "Off Board components\n"
+		(exclude_from_sim no)
+		(at 185.42 105.918 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d4488908-79be-4891-afe3-8d019f8d15ed")
+	)
+	(global_label "FAN_LIVE"
+		(shape input)
+		(at 219.71 78.74 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3db97bd2-0bf9-4e0b-9168-7182e3076df9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 219.71 67.409 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "FAN_CONTROL"
 		(shape input)
@@ -2149,6 +3182,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "HEATER_LIVE"
+		(shape input)
+		(at 236.22 80.01 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b7437e5b-4369-417e-8cec-f4f3ac81a994")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.22 65.232 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2598,6 +3653,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Heater")
+		(at 236.22 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31d676e4-13c9-4b3c-912a-fabfb592f433")
+		(property "Reference" "R16"
+			(at 238.76 85.0899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Heater ~166 Ohm"
+			(at 238.76 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.442 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistive heater"
+			(at 236.22 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "841bd211-0b26-40d5-acc3-78527e711839")
+		)
+		(pin "1"
+			(uuid "4ea62cb1-ecc9-4191-92c2-4a55c163a1b3")
+		)
+		(instances
+			(project ""
+				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d/16ccb7f5-7880-4736-98bc-052f4749b748"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Fuse")
 		(at 212.09 39.37 90)
 		(unit 1)
@@ -2869,6 +3994,142 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 269.24 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4bc528fb-75db-49e1-9359-06fc885a6c0d")
+		(property "Reference" "J5"
+			(at 270.51 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Neutral"
+			(at 270.51 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 269.24 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 269.24 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 269.24 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef602ca4-537f-4600-ae7a-5631c32caf7d")
+		)
+		(instances
+			(project ""
+				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d/16ccb7f5-7880-4736-98bc-052f4749b748"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Motor:Motor_AC")
+		(at 219.71 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(uuid "4c5eb8e7-f28a-4825-b182-0a32fe203de3")
+		(property "Reference" "M1"
+			(at 224.79 86.3599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fan motor"
+			(at 224.79 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 219.71 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219.71 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "AC Motor"
+			(at 219.71 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "011c99e6-9fba-43ad-a89a-8c3db780a0f7")
+		)
+		(pin "1"
+			(uuid "421aa109-0033-4075-b592-1b957c8ff331")
+		)
+		(instances
+			(project ""
+				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d/16ccb7f5-7880-4736-98bc-052f4749b748"
+					(reference "M1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D")
 		(at 114.3 80.01 90)
 		(mirror x)
@@ -2951,6 +4212,120 @@
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d/16ccb7f5-7880-4736-98bc-052f4749b748"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Varistor_US")
+		(at 210.82 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(uuid "57a3aee7-db8e-4915-9e0f-a1a1c352edc4")
+		(property "Reference" "RV1"
+			(at 207.01 86.6167 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10D471K"
+			(at 207.01 89.1567 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.042 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Voltage dependent resistor, US symbol"
+			(at 210.82 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_varistor"
+			(at 210.82 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 210.82 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A 2=B"
+			(at 210.82 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "threshold=1k"
+			(at 210.82 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 210.82 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cf2e18ef-31c5-43c0-b57b-37929fdff939")
+		)
+		(pin "1"
+			(uuid "4ad99292-9c8b-42f7-b83d-7d29c13a9db2")
+		)
+		(instances
+			(project ""
+				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d/16ccb7f5-7880-4736-98bc-052f4749b748"
+					(reference "RV1")
 					(unit 1)
 				)
 			)
@@ -3591,6 +4966,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 195.58 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(uuid "8fb094dc-fb0e-4802-a06c-ac5764e6fc49")
+		(property "Reference" "C18"
+			(at 191.77 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "630V 104J"
+			(at 191.77 85.0899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.5452 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 195.58 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f435b2ed-5cd1-40f0-aa77-0a959bed9e80")
+		)
+		(pin "1"
+			(uuid "6b58196d-0b5c-432c-a602-2b2c4e8381e9")
+		)
+		(instances
+			(project ""
+				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d/16ccb7f5-7880-4736-98bc-052f4749b748"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:LINE")
 		(at 157.48 87.63 0)
 		(unit 1)
@@ -3865,6 +5309,75 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
+		(at 195.58 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(uuid "b567be0b-a31e-4316-8639-df968fcade71")
+		(property "Reference" "R17"
+			(at 193.04 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "R_US"
+			(at 193.04 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.596 91.694 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 195.58 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a04ac0a8-73a0-4da6-81a8-f309b830c0ba")
+		)
+		(pin "1"
+			(uuid "5c0cbf59-8412-45e4-a97d-60b7a7548de3")
+		)
+		(instances
+			(project ""
+				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d/16ccb7f5-7880-4736-98bc-052f4749b748"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
 		(at 97.79 49.53 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4065,88 +5578,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Isolator:CNY17-4")
-		(at 81.28 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c60c636a-3bd5-4735-8673-1bd0cc99c587")
-		(property "Reference" "U8"
-			(at 81.28 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CNY17-4"
-			(at 81.28 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/83606/cny17.pdf"
-			(at 81.28 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "DC Optocoupler Base Connected, Vce 70V, CTR 160-320%, Viso 5000V (RMS), DIP6"
-			(at 81.28 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "bf29c5ae-119a-4cef-af8c-5edf96d5b647")
-		)
-		(pin "1"
-			(uuid "0cddb1e9-07b2-4dde-9bd9-783c5014a689")
-		)
-		(pin "2"
-			(uuid "8d36aee7-0645-4457-914e-e9ec8818402d")
-		)
-		(pin "4"
-			(uuid "e1304f50-ce48-4bd4-9f20-1026ad9a24a4")
-		)
-		(pin "5"
-			(uuid "af0f0346-980d-4f45-a2cf-f409abbe807e")
-		)
-		(pin "3"
-			(uuid "31035d5d-b268-4599-a262-0cf3a32e1455")
-		)
-		(instances
-			(project "Sahara"
-				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d/16ccb7f5-7880-4736-98bc-052f4749b748"
-					(reference "U8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 97.79 93.98 90)
 		(unit 1)
@@ -4282,7 +5713,90 @@
 		)
 	)
 	(symbol
-		(lib_id "Isolator:CNY17-4")
+		(lib_id "Isolator:4N35")
+		(at 81.28 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f01c658f-a65a-4927-8347-6de85f329663")
+		(property "Reference" "U7"
+			(at 81.28 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4N35"
+			(at 81.28 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-6_W7.62mm"
+			(at 76.2 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/81181/4n35.pdf"
+			(at 81.28 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Optocoupler, Phototransistor Output, with Base Connection, Vce 70V, CTR 100%, Viso 5000V, DIP6"
+			(at 81.28 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "647896cb-4a7b-49d6-a0a2-9c94bd3d93f4")
+		)
+		(pin "2"
+			(uuid "03bc8e7a-2030-4ab3-b964-c4e1f7d477ce")
+		)
+		(pin "4"
+			(uuid "bd43e371-d6f8-4a89-9924-9dee9398e6d2")
+		)
+		(pin "5"
+			(uuid "5b5dcf0f-bdbb-4bd7-9bd7-50c7a2dac3cd")
+		)
+		(pin "1"
+			(uuid "004b47a6-8bb5-4b14-a4bf-4b67a6be9739")
+		)
+		(pin "3"
+			(uuid "52192abd-f75c-4fe5-8272-f7a6f1be0695")
+		)
+		(instances
+			(project "Sahara"
+				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d/16ccb7f5-7880-4736-98bc-052f4749b748"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Isolator:4N35")
 		(at 81.28 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4290,8 +5804,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ef31bdc4-cad3-4fea-85d1-02bf1f4baa1a")
-		(property "Reference" "U7"
+		(uuid "f837fecb-1765-4408-a2eb-5bd33d6c8748")
+		(property "Reference" "U9"
 			(at 81.28 38.1 0)
 			(effects
 				(font
@@ -4299,7 +5813,7 @@
 				)
 			)
 		)
-		(property "Value" "CNY17-4"
+		(property "Value" "4N35"
 			(at 81.28 40.64 0)
 			(effects
 				(font
@@ -4307,7 +5821,18 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-6_W7.62mm"
+			(at 76.2 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/81181/4n35.pdf"
 			(at 81.28 46.99 0)
 			(effects
 				(font
@@ -4317,17 +5842,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.vishay.com/docs/83606/cny17.pdf"
-			(at 81.28 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "DC Optocoupler Base Connected, Vce 70V, CTR 160-320%, Viso 5000V (RMS), DIP6"
+		(property "Description" "Optocoupler, Phototransistor Output, with Base Connection, Vce 70V, CTR 100%, Viso 5000V, DIP6"
 			(at 81.28 46.99 0)
 			(effects
 				(font
@@ -4337,27 +5852,27 @@
 			)
 		)
 		(pin "6"
-			(uuid "21fa1954-894c-4db2-be32-f92adb247426")
-		)
-		(pin "1"
-			(uuid "47ccbf5d-6d38-459a-8c62-04020214c51f")
+			(uuid "161d57a9-9340-4caf-94c2-d7808e661d90")
 		)
 		(pin "2"
-			(uuid "5fe5c1ee-ba7c-4cc8-bf78-33c80d5c9cd5")
+			(uuid "71067007-6e91-410d-bc4f-6f02c5e83e79")
 		)
 		(pin "4"
-			(uuid "ee5a1fc6-c72e-4465-b829-9bef10ac6f49")
+			(uuid "c1d02537-2231-4acf-97d2-bc5a970d5229")
 		)
 		(pin "5"
-			(uuid "d913ee2e-ae19-4d2c-9b00-0607cc466a09")
+			(uuid "b54d8631-edc7-40bc-bd89-631fffba3e75")
+		)
+		(pin "1"
+			(uuid "174a2bc7-f87d-4c96-9867-bae5dbf069c1")
 		)
 		(pin "3"
-			(uuid "62afd5a6-7007-43bf-b0a2-65ddf66deafe")
+			(uuid "722bd188-e160-4e69-876d-d9453ce8f373")
 		)
 		(instances
 			(project ""
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d/16ccb7f5-7880-4736-98bc-052f4749b748"
-					(reference "U7")
+					(reference "U9")
 					(unit 1)
 				)
 			)
