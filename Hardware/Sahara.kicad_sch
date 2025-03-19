@@ -3958,7 +3958,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "021d57fd-39d5-4814-b555-b818264acd17")
-		(property "Reference" "C9"
+		(property "Reference" "C4"
 			(at 93.98 25.3999 0)
 			(effects
 				(font
@@ -3976,7 +3976,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 96.8248 30.48 0)
 			(effects
 				(font
@@ -4012,7 +4012,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "C9")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -4027,7 +4027,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "022e4313-5954-4d92-8e07-c1af5c134221")
-		(property "Reference" "C10"
+		(property "Reference" "C1"
 			(at 46.228 51.054 0)
 			(effects
 				(font
@@ -4045,7 +4045,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 44.1452 55.88 0)
 			(effects
 				(font
@@ -4081,7 +4081,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "C10")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -4170,7 +4170,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07c906da-98ae-4fb0-9ac9-2349c2b1376d")
-		(property "Reference" "R2"
+		(property "Reference" "R5"
 			(at 128.27 63.4999 0)
 			(effects
 				(font
@@ -4188,7 +4188,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 126.746 65.024 90)
 			(effects
 				(font
@@ -4224,7 +4224,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "R2")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4240,7 +4240,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "11c6a65f-b8a7-4f6b-b582-e21327244dd6")
-		(property "Reference" "C16"
+		(property "Reference" "C12"
 			(at 173.99 92.7099 0)
 			(effects
 				(font
@@ -4258,7 +4258,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 171.1452 97.79 0)
 			(effects
 				(font
@@ -4294,7 +4294,7 @@
 		(instances
 			(project ""
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "C16")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -4311,7 +4311,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15eff913-cce7-48b5-9c85-8dc7d73b62c0")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR014"
 			(at 97.79 50.8 0)
 			(effects
 				(font
@@ -4362,7 +4362,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR027")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -4377,7 +4377,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "15fccebd-429a-437b-8f94-02e4ba5184ab")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR010"
 			(at 76.2 128.27 0)
 			(effects
 				(font
@@ -4428,7 +4428,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR017")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -4444,7 +4444,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "187e06b1-8969-4922-83ce-fb55dd279d97")
-		(property "Reference" "C1"
+		(property "Reference" "C3"
 			(at 60.96 39.3699 0)
 			(effects
 				(font
@@ -4462,7 +4462,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 58.1152 44.45 0)
 			(effects
 				(font
@@ -4498,7 +4498,7 @@
 		(instances
 			(project ""
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "C1")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -4514,7 +4514,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a7a7b3f-dd0b-49da-9193-a3032b7a6b86")
-		(property "Reference" "J4"
+		(property "Reference" "J3"
 			(at 186.69 90.1699 0)
 			(effects
 				(font
@@ -4568,7 +4568,7 @@
 		(instances
 			(project ""
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "J4")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -4585,7 +4585,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "231c02f5-c76b-4512-8412-5e7dff6baf59")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR05"
 			(at 41.91 113.03 0)
 			(effects
 				(font
@@ -4636,7 +4636,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR061")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -4653,7 +4653,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23714f84-5064-444d-97ee-c4134ace4f2a")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR07"
 			(at 52.07 50.8 0)
 			(effects
 				(font
@@ -4704,7 +4704,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR026")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4843,7 +4843,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "291401e5-ae47-4315-8f7b-c9a89410d334")
-		(property "Reference" "R4"
+		(property "Reference" "R3"
 			(at 54.61 104.1399 0)
 			(effects
 				(font
@@ -4861,7 +4861,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 56.134 105.664 90)
 			(effects
 				(font
@@ -4897,7 +4897,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "R4")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -4914,7 +4914,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d871524-69b3-40e7-9847-a4b56dfe6ccb")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR04"
 			(at 36.83 64.77 0)
 			(effects
 				(font
@@ -4965,7 +4965,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR034")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -4981,7 +4981,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38a71572-785b-4f2c-8dfb-28af7f87ca09")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR022"
 			(at 153.67 55.88 0)
 			(effects
 				(font
@@ -5032,7 +5032,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR032")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -5048,7 +5048,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3e073af7-7eb9-4b88-adc7-42014694ed1d")
-		(property "Reference" "C12"
+		(property "Reference" "C11"
 			(at 157.48 67.31 90)
 			(effects
 				(font
@@ -5064,7 +5064,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 161.29 60.6552 0)
 			(effects
 				(font
@@ -5100,7 +5100,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "C12")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -5116,7 +5116,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3eb1b2d9-7daa-48d1-a8d3-ea9f0fc0c24a")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR024"
 			(at 156.21 104.14 0)
 			(effects
 				(font
@@ -5167,7 +5167,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR078")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -5392,7 +5392,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4a6866f3-868b-4263-8ff2-35734d41f55b")
-		(property "Reference" "U8"
+		(property "Reference" "U2"
 			(at 156.21 83.82 0)
 			(effects
 				(font
@@ -5408,7 +5408,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SamacSys_Parts:SOT230P700X180-4N"
 			(at 156.21 83.82 0)
 			(effects
 				(font
@@ -5448,7 +5448,7 @@
 		(instances
 			(project ""
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "U8")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -5464,7 +5464,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d3c18e8-611e-4e64-b161-770a75de83e2")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR01"
 			(at 30.48 30.48 0)
 			(effects
 				(font
@@ -5514,7 +5514,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR022")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -5530,7 +5530,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63b3de93-171a-4029-8009-30da871f2449")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR028"
 			(at 171.45 31.75 0)
 			(effects
 				(font
@@ -5581,7 +5581,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR062")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -5597,7 +5597,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "678cf7af-ba11-4703-b06c-b0e5d11c39ca")
-		(property "Reference" "C5"
+		(property "Reference" "C9"
 			(at 157.48 38.1 90)
 			(effects
 				(font
@@ -5613,7 +5613,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 161.29 31.4452 0)
 			(effects
 				(font
@@ -5649,7 +5649,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "C5")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -5666,7 +5666,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "681c4239-78cf-4183-b5bb-cf13f45fa12a")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR013"
 			(at 97.79 36.83 0)
 			(effects
 				(font
@@ -5717,7 +5717,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR029")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5733,7 +5733,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b0523e0-2c30-4852-9867-096a16396a73")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR019"
 			(at 139.7 104.14 0)
 			(effects
 				(font
@@ -5784,7 +5784,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR082")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -5800,7 +5800,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6c92d993-0e4e-4e59-9240-7e8c4d26d5bf")
-		(property "Reference" "R3"
+		(property "Reference" "R1"
 			(at 30.48 71.1199 0)
 			(effects
 				(font
@@ -5818,7 +5818,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 32.004 72.644 90)
 			(effects
 				(font
@@ -5854,7 +5854,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "R3")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -5870,7 +5870,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "72b65998-0774-4e42-bf6b-d9fc98dfd4e8")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR08"
 			(at 57.15 50.8 0)
 			(effects
 				(font
@@ -5921,7 +5921,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR06")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -5937,7 +5937,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75bc0ed6-7def-49ae-9b76-6580d75f543d")
-		(property "Reference" "R1"
+		(property "Reference" "R4"
 			(at 116.84 68.5799 0)
 			(effects
 				(font
@@ -5955,7 +5955,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 115.316 70.104 90)
 			(effects
 				(font
@@ -5991,7 +5991,7 @@
 		(instances
 			(project ""
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "R1")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -6008,7 +6008,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "776251da-58bf-4335-a66b-c52c5a418c67")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR09"
 			(at 57.15 115.57 0)
 			(effects
 				(font
@@ -6059,7 +6059,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR021")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -6075,7 +6075,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f136139-a92f-46e3-a04e-888e41262bba")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR021"
 			(at 153.67 36.83 0)
 			(effects
 				(font
@@ -6126,7 +6126,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR024")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -6141,7 +6141,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9027f2eb-faa9-426c-b0a0-fc0db5c96377")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR018"
 			(at 139.7 93.98 0)
 			(effects
 				(font
@@ -6191,7 +6191,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR080")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -6206,7 +6206,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a50dd872-fd2f-4c97-814b-b1e60aabbc3d")
-		(property "Reference" "C4"
+		(property "Reference" "C8"
 			(at 157.48 13.462 90)
 			(effects
 				(font
@@ -6222,7 +6222,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 161.29 19.3548 0)
 			(effects
 				(font
@@ -6258,7 +6258,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "C4")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -6274,7 +6274,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a61ae92c-406f-434c-abac-9266d3c51d87")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR027"
 			(at 170.18 104.14 0)
 			(effects
 				(font
@@ -6325,7 +6325,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR081")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -6340,7 +6340,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a9bdba8e-68d0-4b58-b49a-1f45454fda4a")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR012"
 			(at 78.74 128.27 0)
 			(effects
 				(font
@@ -6391,7 +6391,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR030")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -6407,7 +6407,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aace0d32-8df5-482e-8ad6-312e1d7f83d2")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR03"
 			(at 33.02 72.39 0)
 			(effects
 				(font
@@ -6457,7 +6457,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR020")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -6474,7 +6474,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b26e745e-46e7-4a0c-ba36-b7e85b081e61")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR06"
 			(at 43.18 64.77 0)
 			(effects
 				(font
@@ -6525,7 +6525,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR031")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -6541,7 +6541,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b41d84a7-8e35-458b-a3eb-ecb1affa6428")
-		(property "Reference" "C17"
+		(property "Reference" "C7"
 			(at 143.51 92.7099 0)
 			(effects
 				(font
@@ -6559,7 +6559,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 140.6652 97.79 0)
 			(effects
 				(font
@@ -6587,15 +6587,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "8d8286b1-e965-432c-8724-996a77b6de2a")
+			(uuid "8d8286b1-e965-432c-8724-996a77b6de2b")
 		)
 		(pin "1"
-			(uuid "c19d34e3-8e90-4fc0-b6d5-4e13b6b77128")
+			(uuid "c19d34e3-8e90-4fc0-b6d5-4e13b6b77129")
 		)
 		(instances
 			(project ""
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "C17")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -6611,7 +6611,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b624031e-0365-48e6-80a1-b2419bc051d3")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR015"
 			(at 102.87 50.8 0)
 			(effects
 				(font
@@ -6662,7 +6662,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR028")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -6679,7 +6679,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c46803d0-0a58-495c-b1c6-ae73e62e3a68")
-		(property "Reference" "R9"
+		(property "Reference" "R2"
 			(at 39.37 101.5999 0)
 			(effects
 				(font
@@ -6697,7 +6697,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 40.894 103.124 90)
 			(effects
 				(font
@@ -6733,7 +6733,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "R9")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -6749,7 +6749,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c5aa16ba-286c-4b06-b4a7-a656de087132")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR017"
 			(at 125.73 74.93 0)
 			(effects
 				(font
@@ -6800,7 +6800,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR018")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -6816,7 +6816,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ccb9cab0-3551-40c1-80cb-207d745a0c4e")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR020"
 			(at 153.67 26.67 0)
 			(effects
 				(font
@@ -6867,7 +6867,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR025")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -6883,7 +6883,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d27512b8-a9fe-422d-8e84-8e813afabd1c")
-		(property "Reference" "C8"
+		(property "Reference" "C6"
 			(at 106.68 39.3699 0)
 			(effects
 				(font
@@ -6901,7 +6901,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 103.8352 44.45 0)
 			(effects
 				(font
@@ -6937,7 +6937,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "C8")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -6953,7 +6953,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3d89ae9-33a8-4f5b-9f38-c2d6f411828d")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR029"
 			(at 179.07 104.14 0)
 			(effects
 				(font
@@ -7004,7 +7004,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR077")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -7020,7 +7020,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d41d99be-a278-4722-b9a3-6d7a3599b3e9")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR016"
 			(at 114.3 80.01 0)
 			(effects
 				(font
@@ -7071,7 +7071,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR019")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -7155,7 +7155,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d7dacea7-84fc-420b-9fda-2e2522222e77")
-		(property "Reference" "R5"
+		(property "Reference" "R6"
 			(at 179.324 24.384 0)
 			(effects
 				(font
@@ -7173,7 +7173,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 178.816 25.654 90)
 			(effects
 				(font
@@ -7209,7 +7209,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "R5")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -7225,7 +7225,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7dd4bff-d104-484c-b2a8-289dad2a65f0")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR02"
 			(at 30.48 40.64 0)
 			(effects
 				(font
@@ -7276,7 +7276,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR023")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -7368,7 +7368,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7f9796e-2070-47b6-b907-3e67155f9167")
-		(property "Reference" "J3"
+		(property "Reference" "J2"
 			(at 86.36 146.0499 0)
 			(effects
 				(font
@@ -7422,7 +7422,7 @@
 		(instances
 			(project ""
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "J3")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -7438,7 +7438,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec60dde4-f520-446c-8b30-ba95c7ea7a6f")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR026"
 			(at 170.18 93.98 0)
 			(effects
 				(font
@@ -7488,7 +7488,7 @@
 		(instances
 			(project ""
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR079")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -7503,7 +7503,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eca64940-6a8c-4f59-9331-5a7ca913b616")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR011"
 			(at 78.74 24.13 0)
 			(effects
 				(font
@@ -7553,7 +7553,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR05")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -7570,7 +7570,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "efec4a64-91fe-4856-8a5b-05af474c0ad6")
-		(property "Reference" "C6"
+		(property "Reference" "C2"
 			(at 48.26 39.3699 0)
 			(effects
 				(font
@@ -7588,7 +7588,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 51.1048 44.45 0)
 			(effects
 				(font
@@ -7624,7 +7624,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "C6")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -7640,7 +7640,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2253481-07d3-4868-bc0b-965eb0d177e0")
-		(property "Reference" "C11"
+		(property "Reference" "C10"
 			(at 157.48 41.91 90)
 			(effects
 				(font
@@ -7656,7 +7656,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 161.29 48.5648 0)
 			(effects
 				(font
@@ -7692,7 +7692,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "C11")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -7708,7 +7708,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f22bba20-90e7-4a30-8929-fd6cbc148b51")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR023"
 			(at 153.67 66.04 0)
 			(effects
 				(font
@@ -7759,7 +7759,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR033")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -7775,7 +7775,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f958828b-29e3-475d-88f5-bc6231b86523")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR025"
 			(at 161.29 31.75 0)
 			(effects
 				(font
@@ -7826,7 +7826,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "#PWR063")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -7843,7 +7843,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb918c92-dfbf-4643-8e6c-6ff0c8175b83")
-		(property "Reference" "C7"
+		(property "Reference" "C5"
 			(at 93.98 39.3699 0)
 			(effects
 				(font
@@ -7861,7 +7861,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 96.8248 44.45 0)
 			(effects
 				(font
@@ -7897,7 +7897,7 @@
 		(instances
 			(project "Sahara"
 				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
-					(reference "C7")
+					(reference "C5")
 					(unit 1)
 				)
 			)

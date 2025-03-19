@@ -36,4 +36,22 @@ K
 F https://datasheet.datasheetarchive.com/originals/distributors/DKDS-9/177177.pdf
 $ENDCMP
 #
+$CMP 4N35S
+D Transistor Output Optocouplers PTR 100%, 3.5KV
+K
+F http://optoelectronics.liteon.com/upload/download/DS-70-99-0012/4N3X%20Series%201115.pdf
+$ENDCMP
+#
+$CMP SN74HC595DR
+D 8-Bit Shift Register 3-ST SN74HC595DRG4 SN74HC595DR, 8-stage Shift Register, Serial to Serial/Parallel, 2 ???????? 6 V, 16-Pin SOIC%0
+K
+F https://www.ti.com/lit/ds/symlink/sn74hc595.pdf?ts=1656059899036&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FSN74HC595%252Fpart-details%252FSN74HC595PWR
+$ENDCMP
+#
+$CMP AZ1117CH2-3.3TRG1
+D LDO Voltage Regulators LDO BJT HiCurr SOT223 T&R 4K
+K
+F https://www.diodes.com//assets/Datasheets/AZ1117C.pdf
+$ENDCMP
+#
 #End Doc Library
