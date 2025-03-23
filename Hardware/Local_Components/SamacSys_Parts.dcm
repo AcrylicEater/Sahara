@@ -54,4 +54,28 @@ K
 F https://www.diodes.com//assets/Datasheets/AZ1117C.pdf
 $ENDCMP
 #
+$CMP BAS70-04
+D Taiwan Semi BAS70-04, Dual SMT Schottky Diode, Series, 70V 70mA, 5ns, 3-Pin SOT-23
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-2/DSA-34892.pdf
+$ENDCMP
+#
+$CMP 696108003002
+D WR-FSH FUSEHOLDER THT CLIP COVER green WR-FSH FUSEHOLDER THT CLIP COVER green
+K
+F http://katalog.we-online.de/em/datasheet/696108003002.pdf
+$ENDCMP
+#
+$CMP 521-8559F
+D Standard LEDs - Through Hole 5mm RGB WC LED w4 leads
+K
+F 
+$ENDCMP
+#
+$CMP B2B-XH-A_LF__SN_
+D Connector Header Through Hole 2 position 0.098" (2.50mm)
+K
+F http://www.jst-mfg.com/product/pdf/eng/eXH.pdf
+$ENDCMP
+#
 #End Doc Library

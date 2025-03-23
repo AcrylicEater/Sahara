@@ -247,4 +247,95 @@ P 5 0 1 6 200 100 1400 100 1400 -300 200 -300 200 100 N
 ENDDRAW
 ENDDEF
 #
+#SamacSys ECAD Model BAS70-04
+#/441923/1413924/2.50/3/4/Diode
+DEF BAS70-04 D 0 30 Y Y 1 F N
+F0 "D" 1550 300 50 H V L CNN
+F1 "BAS70-04" 1550 200 50 H V L CNN
+F2 "SOT97P230X109-3N" 1550 100 50 H I L CNN
+F3 "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-2/DSA-34892.pdf" 1550 0 50 H I L CNN
+F4 "Taiwan Semi BAS70-04, Dual SMT Schottky Diode, Series, 70V 70mA, 5ns, 3-Pin SOT-23" 1550 -100 50 H I L CNN "Description"
+F5 "1.087" 1550 -200 50 H I L CNN "Height"
+F6 "Taiwan Semiconductor" 1550 -300 50 H I L CNN "Manufacturer_Name"
+F7 "BAS70-04" 1550 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "821-BAS70-04" 1550 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Taiwan-Semiconductor/BAS70-04?qs=tHU%2FlV7kTyRqoQEOuDEaDQ%3D%3D" 1550 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "BAS70-04" 1550 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/bas70-04/taiwan-semiconductor?region=nac" 1550 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X ANODE 1 0 0 200 R 50 50 0 0 P
+X CATHODE 2 0 -100 200 R 50 50 0 0 P
+X ANODE_CATHODE 3 1700 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1500 100 1500 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model 696108003002
+#/357159/1413924/2.50/2/4/Undefined or Miscellaneous
+DEF 696108003002 U 0 30 Y Y 1 F N
+F0 "U" 650 300 50 H V L CNN
+F1 "696108003002" 650 200 50 H V L CNN
+F2 "WR-FSH_THT_2" 650 100 50 H I L CNN
+F3 "http://katalog.we-online.de/em/datasheet/696108003002.pdf" 650 0 50 H I L CNN
+F4 "WR-FSH FUSEHOLDER THT CLIP COVER green WR-FSH FUSEHOLDER THT CLIP COVER green" 650 -100 50 H I L CNN "Description"
+F5 "" 650 -200 50 H I L CNN "Height"
+F6 "Wurth Elektronik" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "696108003002" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "710-696108003002" 650 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/696108003002?qs=%252BEew9%252B0nqrCCQeoUrFurBg%3D%3D" 650 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "" 650 -700 50 H I L CNN "Arrow Part Number"
+F11 "" 650 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model 521-8559F
+#/13125497/1413924/2.50/4/4/LED
+DEF 521-8559F LED 0 30 Y Y 1 F N
+F0 "LED" 950 300 50 H V L CNN
+F1 "521-8559F" 950 200 50 H V L CNN
+F2 "5218559F" 950 100 50 H I L CNN
+F3 "" 950 0 50 H I L CNN
+F4 "Standard LEDs - Through Hole 5mm RGB WC LED w4 leads" 950 -100 50 H I L CNN "Description"
+F5 "8.6" 950 -200 50 H I L CNN "Height"
+F6 "Dialight" 950 -300 50 H I L CNN "Manufacturer_Name"
+F7 "521-8559F" 950 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "645-5218559F" 950 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Dialight/521-8559F?qs=vmHwEFxEFR%2FyCJVY9sdZTA%3D%3D" 950 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "521-8559F" 950 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/521-8559f/dialight?utm_currency=USD&region=nac" 950 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X RED_K 1 0 0 200 R 50 50 0 0 P
+X COMMON_A 2 0 -100 200 R 50 50 0 0 P
+X BLUE_K 3 0 -200 200 R 50 50 0 0 P
+X GREEN_K 4 0 -300 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 900 100 900 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model B2B-XH-A_LF__SN_
+#/2378475/1413924/2.50/2/3/Connector
+DEF B2B-XH-A_LF__SN_ J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "B2B-XH-A_LF__SN_" 650 200 50 H V L CNN
+F2 "SHDR2W64P0X250_1X2_740X575X700P" 650 100 50 H I L CNN
+F3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" 650 0 50 H I L CNN
+F4 "Connector Header Through Hole 2 position 0.098\" (2.50mm)" 650 -100 50 H I L CNN "Description"
+F5 "7" 650 -200 50 H I L CNN "Height"
+F6 "JST (JAPAN SOLDERLESS TERMINALS)" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "B2B-XH-A(LF)(SN)" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "306-B2BXHALFSNP" 650 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/JST-Commercial/B2B-XH-ALFSN?qs=cdbOS8ANM9DdcSn9qRmfCw%3D%3D" 650 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "B2B-XH-A(LF)(SN)" 650 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/b2b-xh-a-lf-sn/jst-manufacturing?utm_currency=USD&region=europe" 650 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
 #End Library

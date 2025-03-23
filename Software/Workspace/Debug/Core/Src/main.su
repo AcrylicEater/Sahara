@@ -1,0 +1,15 @@
+../Core/Src/main.c:87:5:isNthBitSet	16	static
+../Core/Src/main.c:92:6:DisplayNumber	16	static
+../Core/Src/main.c:104:6:DisplayColor	16	static
+../Core/Src/main.c:149:6:SetupTMP102	24	static
+../Core/Src/main.c:162:7:readTemp	24	static
+../Core/Src/main.c:184:6:set_alarm	32	static
+../Core/Src/main.c:209:5:main	8	static
+../Core/Src/main.c:309:6:SystemClock_Config	88	static
+../Core/Src/main.c:357:13:MX_I2C1_Init	8	static
+../Core/Src/main.c:391:13:MX_RTC_Init	8	static
+../Core/Src/main.c:422:13:MX_SPI1_Init	8	static
+../Core/Src/main.c:460:13:MX_TIM1_Init	56	static
+../Core/Src/main.c:510:13:MX_GPIO_Init	40	static
+../Core/Src/main.c:549:6:HAL_RTC_AlarmAEventCallback	16	static
+../Core/Src/main.c:567:6:Error_Handler	4	static,ignoring_inline_asm
