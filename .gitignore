@@ -1,1 +1,4 @@
 *.zip
+*.drawio
+*.log
+.metadata/

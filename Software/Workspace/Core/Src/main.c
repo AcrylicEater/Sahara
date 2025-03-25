@@ -21,7 +21,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "Output_manager.h"
+#include "Input_manager.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -31,9 +32,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define TMP102_ADR 0x48
-#define TEMP_REG 0x00
-#define CONFIG_REG 0x01
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -49,28 +48,29 @@ RTC_HandleTypeDef hrtc;
 SPI_HandleTypeDef hspi1;
 
 TIM_HandleTypeDef htim1;
+TIM_HandleTypeDef htim2;
 
 /* USER CODE BEGIN PV */
-uint8_t SegData[2] = {0x00,0x00};
-uint8_t EncTrig = 0;
-uint8_t count = 0;
-uint8_t  time = 0;
-uint8_t timeState = 0;
-uint32_t EncRaw = 0;
-uint32_t OldEncRaw = 0;
-float Temp = 0.0;
-static uint8_t Nums[] = {0b01110111,0b01000100,0b01101011,0b01101110,0b01011100,0b00111110,0b00111111,0b01100100,0b01111111,0b01111100};
 
-typedef enum  {
-	BLACK,
-	RED,
-	GREEN,
-	BLUE,
-	PURPLE,
-	YELLOW,
-	CYAN,
-	WHITE
-} Colors;
+
+static int16_t time = 0;
+static float temp = 0.0;
+static float targetTemp;
+typedef enum {
+    START_UP,
+    INPUT_TEMP,
+    INPUT_TIME,
+    HEATUP,
+    CRUISE,
+    COOLDOWN,
+    NUM_STAGES  // Total number of stages (used for array size)
+} stages;
+
+static stages stage;
+
+typedef void (*StageFunction)(void);  // Function pointer type
+
+
 
 /* USER CODE END PV */
 
@@ -81,105 +81,91 @@ static void MX_SPI1_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_RTC_Init(void);
 static void MX_I2C1_Init(void);
+static void MX_TIM2_Init(void);
 /* USER CODE BEGIN PFP */
 
 
-int isNthBitSet (unsigned char c, int n) {
-    static unsigned char mask[] = {128, 64, 32, 16, 8, 4, 2, 1};
-    return ((c & mask[n]) != 0);
-}
 
-void DisplayNumber(int num){
-	num%=100;
-	SegData[0]=Nums[num%10];
-	SegData[1]=Nums[num/10];
-	HAL_GPIO_WritePin(SRCLR_GPIO_Port, SRCLR_Pin, 0);
-	HAL_GPIO_WritePin(SRCLR_GPIO_Port, SRCLR_Pin, 1);
-	HAL_SPI_Transmit(&hspi1, SegData, 2, 100);
-	HAL_GPIO_WritePin(RCLK_GPIO_Port, RCLK_Pin, 0);
-	HAL_GPIO_WritePin(RCLK_GPIO_Port, RCLK_Pin, 1);
-
-}
-
-void DisplayColor(Colors c){
-	switch(c){
-	case BLACK:
-		HAL_GPIO_WritePin(RED_LED_GPIO_Port, RED_LED_Pin, 1);
-		HAL_GPIO_WritePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin, 1);
-		HAL_GPIO_WritePin(BLUE_LED_GPIO_Port, BLUE_LED_Pin, 1);
-		break;
-	case RED:
-		HAL_GPIO_WritePin(RED_LED_GPIO_Port, RED_LED_Pin, 0);
-		HAL_GPIO_WritePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin, 1);
-		HAL_GPIO_WritePin(BLUE_LED_GPIO_Port, BLUE_LED_Pin, 1);
-		break;
-	case GREEN:
-		HAL_GPIO_WritePin(RED_LED_GPIO_Port, RED_LED_Pin, 1);
-		HAL_GPIO_WritePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin, 0);
-		HAL_GPIO_WritePin(BLUE_LED_GPIO_Port, BLUE_LED_Pin, 1);
-		break;
-	case BLUE:
-		HAL_GPIO_WritePin(RED_LED_GPIO_Port, RED_LED_Pin, 1);
-		HAL_GPIO_WritePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin, 1);
-		HAL_GPIO_WritePin(BLUE_LED_GPIO_Port, BLUE_LED_Pin, 0);
-		break;
-	case PURPLE:
-		HAL_GPIO_WritePin(RED_LED_GPIO_Port, RED_LED_Pin, 0);
-		HAL_GPIO_WritePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin, 1);
-		HAL_GPIO_WritePin(BLUE_LED_GPIO_Port, BLUE_LED_Pin, 0);
-		break;
-	case YELLOW:
-		HAL_GPIO_WritePin(RED_LED_GPIO_Port, RED_LED_Pin, 0);
-		HAL_GPIO_WritePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin, 0);
-		HAL_GPIO_WritePin(BLUE_LED_GPIO_Port, BLUE_LED_Pin, 1);
-		break;
-	case CYAN:
-		HAL_GPIO_WritePin(RED_LED_GPIO_Port, RED_LED_Pin, 1);
-		HAL_GPIO_WritePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin, 0);
-		HAL_GPIO_WritePin(BLUE_LED_GPIO_Port, BLUE_LED_Pin, 0);
-		break;
-	case WHITE:
-		HAL_GPIO_WritePin(RED_LED_GPIO_Port, RED_LED_Pin, 0);
-		HAL_GPIO_WritePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin, 0);
-		HAL_GPIO_WritePin(BLUE_LED_GPIO_Port, BLUE_LED_Pin, 0);
-		break;
-	}
-}
-
-void SetupTMP102(){
-	uint8_t ConfigData[3] = {CONFIG_REG, 0b01100000,0b0111000};
-	uint8_t TempPointer[1]={TEMP_REG};
-	while(HAL_I2C_Master_Transmit(&hi2c1, (uint16_t)(TMP102_ADR<<1),ConfigData,3,5)!=HAL_OK){
-		  DisplayColor(RED);
-	  }
-	while(HAL_I2C_Master_Transmit(&hi2c1, (uint16_t)(TMP102_ADR<<1),TempPointer,1,5)!=HAL_OK){
-			  DisplayColor(RED);
-		  }
-	DisplayColor(GREEN);
-
-}
-
-float readTemp(){
-	uint8_t buffer[2];
-	int16_t digitalTemp;
-
-	HAL_I2C_Master_Receive(&hi2c1, TMP102_ADR<<1, buffer, 2, 5);
-
-    // Combine bytes to create a signed int
-    digitalTemp = ((buffer[0]) << 5) | (buffer[1] >> 3);
-    // Temperature data can be + or -, if it should be negative,
-    // convert 13 bit to 16 bit and use the 2s compliment.
-    if (digitalTemp > 0xFFF)
-    {
-      digitalTemp |= 0xE000;
-    }
-    return digitalTemp * 0.0625;
-}
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+    if (htim->Instance == TIM2) {  // Check if TIM2 triggered the interrupt
+    	time--;
+    	if(time<0){
+    		stage=START_UP;
+    		return;
+    	}
+    	displayTime(time);
+    }
+}
+
+void start_up(){
+	HAL_TIM_Base_Stop_IT(&htim2);
+	setRelay(HEATER, 0);
+	setRelay(FAN, 0);
+	displayColor(BLACK);
+
+	targetTemp = 50.0;
+	time = 4*60 + 30;
+
+	displayNumber((int)targetTemp, TEMP);
+	displayTime(time);
+
+	stage = INPUT_TEMP;
+}
+
+void input_temp(){
+	displayColor(YELLOW);
+	if(readEncoder(3)==HIGHER){
+		targetTemp++;
+	}
+	if(readEncoder(3)==LOWER){
+		targetTemp--;
+	}
+	displayNumber((int)targetTemp, TEMP);
+	if (HAL_GPIO_ReadPin(EncBut_GPIO_Port, EncBut_Pin)==1){
+		stage = INPUT_TIME;
+	}
+}
+
+void input_time(){
+	displayColor(CYAN);
+	if(readEncoder(3)==HIGHER){
+		time+=15;
+	}
+	if(readEncoder(3)==LOWER||time!=15){
+		time-=15;
+	}
+	displayNumber((int)targetTemp, TEMP);
+	if (HAL_GPIO_ReadPin(EncBut_GPIO_Port, EncBut_Pin)==1){
+		stage = INPUT_TIME;
+	}
+}
+
+void heatup(){
+
+}
+
+void cruise(){
+
+}
+
+void cooldown(){
+
+}
+
+StageFunction stageHandlers[NUM_STAGES] = {
+    start_up,   // START_UP
+    input_temp, // INPUT_TEMP
+    input_time, // INPUT_TIME
+    heatup,     // HEATUP
+    cruise,     // CRUISE
+    cooldown    // COOLDOWN
+};
 
 void set_alarm(uint8_t min)
 {
@@ -235,28 +221,23 @@ int main(void)
   MX_TIM1_Init();
   MX_RTC_Init();
   MX_I2C1_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_Encoder_Start(&htim1, TIM_CHANNEL_ALL);
-  __HAL_TIM_SET_COUNTER(&htim1, 32767);
-  EncRaw = __HAL_TIM_GET_COUNTER(&htim1);
-  OldEncRaw=EncRaw;
-  SetupTMP102();
 
+  setupTMP102();
+  setupEncoder();
+  stage = START_UP;
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-
-
-
-  HAL_Delay(1000);
+  //HAL_Delay(1000);
   while (1)
   {
-	  Temp = readTemp();
-	  DisplayNumber((uint8_t)Temp);
-	  HAL_Delay(1000);
+	  stageHandlers[stage]();
+
 	  /*
 	   * if(HAL_I2C_IsDeviceReady(&hi2c1, (uint16_t)(TMP102_ADR<<1), 3, 25)==HAL_OK){
 		  DisplayColor(GREEN);
@@ -503,6 +484,51 @@ static void MX_TIM1_Init(void)
 }
 
 /**
+  * @brief TIM2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM2_Init(void)
+{
+
+  /* USER CODE BEGIN TIM2_Init 0 */
+
+  /* USER CODE END TIM2_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM2_Init 1 */
+
+  /* USER CODE END TIM2_Init 1 */
+  htim2.Instance = TIM2;
+  htim2.Init.Prescaler = 35999;
+  htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim2.Init.Period = 59999;
+  htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim2, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM2_Init 2 */
+
+  /* USER CODE END TIM2_Init 2 */
+
+}
+
+/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -519,16 +545,25 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, SRCLR_Pin|RCLK_Pin|GREEN_LED_Pin|BLUE_LED_Pin
-                          |RED_LED_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(HEATER_RELAY_GPIO_Port, HEATER_RELAY_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, SRCLK_Pin|SER_Pin|Fan_Relay_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, SRCLR_Pin|GREEN_LED_Pin|BLUE_LED_Pin|RED_LED_Pin, GPIO_PIN_SET);
 
-  /*Configure GPIO pins : SRCLR_Pin SRCLK_Pin RCLK_Pin SER_Pin
-                           GREEN_LED_Pin BLUE_LED_Pin RED_LED_Pin Fan_Relay_Pin */
-  GPIO_InitStruct.Pin = SRCLR_Pin|SRCLK_Pin|RCLK_Pin|SER_Pin
-                          |GREEN_LED_Pin|BLUE_LED_Pin|RED_LED_Pin|Fan_Relay_Pin;
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, TIME_LATCH_Pin|TEMP_LATCH_Pin|FAN_RELAY_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : HEATER_RELAY_Pin */
+  GPIO_InitStruct.Pin = HEATER_RELAY_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(HEATER_RELAY_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : SRCLR_Pin TIME_LATCH_Pin TEMP_LATCH_Pin GREEN_LED_Pin
+                           BLUE_LED_Pin RED_LED_Pin FAN_RELAY_Pin */
+  GPIO_InitStruct.Pin = SRCLR_Pin|TIME_LATCH_Pin|TEMP_LATCH_Pin|GREEN_LED_Pin
+                          |BLUE_LED_Pin|RED_LED_Pin|FAN_RELAY_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -546,10 +581,11 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+/*
 void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
 {
 
-  DisplayNumber(time);
+  DisplayNumber(time,TIME);
   if(time==0){
 	  timeState=0;
   }else{
@@ -558,6 +594,7 @@ void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
   }
 
 }
+*/
 /* USER CODE END 4 */
 
 /**

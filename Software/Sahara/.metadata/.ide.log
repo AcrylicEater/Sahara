@@ -1,0 +1,69 @@
+2025-03-25 07:41:00,958 [INFO] WebApp:190 - Connection lost
+2025-03-25 08:12:38,656 [INFO] WebApp:187 - Connection restablished
+2025-03-25 08:12:40,505 [INFO] WebApp:190 - Connection lost
+2025-03-25 08:12:40,628 [INFO] WebApp:187 - Connection restablished
+2025-03-25 12:00:53,342 [INFO] WebApp:190 - Connection lost
+2025-03-25 12:00:55,766 [INFO] WebApp:187 - Connection restablished
+2025-03-25 13:05:38,329 [INFO] WebApp:190 - Connection lost
+2025-03-25 13:14:43,745 [INFO] WebApp:187 - Connection restablished
+2025-03-25 13:14:46,190 [INFO] WebApp:190 - Connection lost
+2025-03-25 13:14:46,545 [INFO] WebApp:187 - Connection restablished
+2025-03-25 13:15:25,132 [INFO] WebApp:190 - Connection lost
+2025-03-25 13:15:25,343 [INFO] WebApp:187 - Connection restablished
+2025-03-25 19:52:44,487 [INFO] WebApp:190 - Connection lost
+2025-03-25 19:52:47,974 [INFO] WebApp:187 - Connection restablished
+2025-03-25 19:54:04,039 [INFO] WebApp:190 - Connection lost
+2025-03-25 19:54:04,248 [INFO] WebApp:187 - Connection restablished
+2025-03-25 19:54:07,538 [INFO] WebApp:190 - Connection lost
+2025-03-25 19:54:07,733 [INFO] WebApp:187 - Connection restablished
+2025-03-25 19:54:10,577 [INFO] WebApp:190 - Connection lost
+2025-03-25 19:54:10,722 [INFO] WebApp:187 - Connection restablished
+2025-03-25 19:55:29,066 [INFO] WebApp:190 - Connection lost
+2025-03-25 19:55:29,223 [INFO] WebApp:187 - Connection restablished
+2025-03-25 20:05:00,898 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,482x331,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-03-25 20:05:02,935 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-03-25 20:10:50,448 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-03-25 20:11:05,899 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 1003051880 Bytes (1073741824)
+2025-03-25 20:13:00,191 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-03-25 20:13:41,039 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 828568704 Bytes (1073741824)
+2025-03-25 20:13:43,133 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 843593648 Bytes (1073741824)
+2025-03-25 20:13:44,714 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 918042544 Bytes (1073741824)
+2025-03-25 20:13:44,894 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RTC
+2025-03-25 20:13:44,894 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SPI
+2025-03-25 20:13:44,894 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2025-03-25 20:13:44,894 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2025-03-25 20:13:44,894 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2025-03-25 20:13:44,910 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2025-03-25 20:13:44,910 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2025-03-25 20:13:44,910 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2025-03-25 20:13:44,910 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: I2C
+2025-03-25 20:13:44,910 [INFO] CodeGenerator:896 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.13.0.202411220809\\db\
+2025-03-25 20:13:44,912 [WARN] IP:2251 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-03-25 20:13:44,912 [WARN] IP:2251 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-03-25 20:13:45,026 [INFO] CodeEngine:255 - oldGeneratedFile, X:\PROJECTS\Sahara\Software\Workspace\MXTmpFiles\license.tmp_save
+2025-03-25 20:13:45,228 [INFO] CodeEngine:279 - Generated code: X:\PROJECTS\Sahara\Software\Workspace\MXTmpFiles\license.tmp
+2025-03-25 20:13:45,290 [INFO] CodeEngine:255 - oldGeneratedFile, X:\PROJECTS\Sahara\Software\Workspace\MXTmpFiles\gpio.tmp_save
+2025-03-25 20:13:45,416 [INFO] CodeEngine:279 - Generated code: X:\PROJECTS\Sahara\Software\Workspace\MXTmpFiles\gpio.tmp
+2025-03-25 20:13:45,736 [INFO] CodeEngine:255 - oldGeneratedFile, X:\PROJECTS\Sahara\Software\Workspace\Core\Src\stm32f1xx_it.c_save
+2025-03-25 20:13:46,004 [INFO] CodeEngine:279 - Generated code: X:\PROJECTS\Sahara\Software\Workspace\Core\Src\stm32f1xx_it.c
+2025-03-25 20:13:46,031 [INFO] CodeEngine:255 - oldGeneratedFile, X:\PROJECTS\Sahara\Software\Workspace\Core\Inc\stm32f1xx_it.h_save
+2025-03-25 20:13:46,129 [INFO] CodeEngine:279 - Generated code: X:\PROJECTS\Sahara\Software\Workspace\Core\Inc\stm32f1xx_it.h
+2025-03-25 20:13:46,165 [INFO] CodeEngine:255 - oldGeneratedFile, X:\PROJECTS\Sahara\Software\Workspace\Core\Src\stm32f1xx_hal_msp.c_save
+2025-03-25 20:13:46,320 [INFO] CodeEngine:279 - Generated code: X:\PROJECTS\Sahara\Software\Workspace\Core\Src\stm32f1xx_hal_msp.c
+2025-03-25 20:13:46,342 [INFO] CodeEngine:255 - oldGeneratedFile, X:\PROJECTS\Sahara\Software\Workspace\MXTmpFiles\system.tmp_save
+2025-03-25 20:13:46,409 [INFO] CodeEngine:279 - Generated code: X:\PROJECTS\Sahara\Software\Workspace\MXTmpFiles\system.tmp
+2025-03-25 20:13:46,436 [INFO] CodeEngine:311 - oldGeneratedFile, X:\PROJECTS\Sahara\Software\Workspace\Core\Inc\stm32f1xx_hal_conf.h_save
+2025-03-25 20:13:46,527 [INFO] CodeEngine:335 - Generated code: X:\PROJECTS\Sahara\Software\Workspace\Core\Inc\stm32f1xx_hal_conf.h
+2025-03-25 20:13:46,565 [INFO] ApiDbMcu:508 - Load IP Config File for TIM2
+2025-03-25 20:13:46,567 [WARN] IPConfigManager:3618 - IP not found : TIM
+2025-03-25 20:13:46,567 [WARN] CodeGenerator:4152 - IP not found : null
+2025-03-25 20:13:46,593 [INFO] CodeEngine:255 - oldGeneratedFile, X:\PROJECTS\Sahara\Software\Workspace\Core\Inc\main.h_save
+2025-03-25 20:13:46,702 [INFO] CodeEngine:279 - Generated code: X:\PROJECTS\Sahara\Software\Workspace\Core\Inc\main.h
+2025-03-25 20:13:46,718 [INFO] CodeEngine:255 - oldGeneratedFile, X:\PROJECTS\Sahara\Software\Workspace\Core\Src\main.c_save
+2025-03-25 20:13:46,829 [INFO] CodeEngine:279 - Generated code: X:\PROJECTS\Sahara\Software\Workspace\Core\Src\main.c
+2025-03-25 20:13:47,242 [INFO] ProjectBuilder:3289 - Time for Copy HAL[1] : 195mS.
+2025-03-25 20:13:47,242 [INFO] ProjectBuilder:4876 - Project Generator version: 4.5.0-RC5
+2025-03-25 20:13:47,336 [INFO] ConfigFileManager:1579 - The Die is : DIE410
+2025-03-25 20:13:48,939 [INFO] ProjectBuilder:5154 - Time for Generating toolchain IDE Files: 1697mS.
+2025-03-25 20:13:48,940 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.
+2025-03-25 20:13:48,941 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.

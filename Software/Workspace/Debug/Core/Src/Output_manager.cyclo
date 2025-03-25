@@ -1,0 +1,5 @@
+../Core/Src/Output_manager.c:9:6:displayNumber	5
+../Core/Src/Output_manager.c:33:6:displayTime	2
+../Core/Src/Output_manager.c:44:6:displayColor	9
+../Core/Src/Output_manager.c:89:6:setRelay	3
+../Core/Src/Output_manager.c:103:6:pwmHeater	5

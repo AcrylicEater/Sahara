@@ -1,0 +1,4 @@
+../Core/Src/Input_manager.c:9:6:setupTMP102	3
+../Core/Src/Input_manager.c:21:7:readTemp	2
+../Core/Src/Input_manager.c:41:6:setupEncoder	1
+../Core/Src/Input_manager.c:47:11:readEncoder	5

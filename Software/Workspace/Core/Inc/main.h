@@ -57,14 +57,14 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define HEATER_RELAY_Pin GPIO_PIN_3
+#define HEATER_RELAY_GPIO_Port GPIOA
 #define SRCLR_Pin GPIO_PIN_0
 #define SRCLR_GPIO_Port GPIOB
-#define SRCLK_Pin GPIO_PIN_1
-#define SRCLK_GPIO_Port GPIOB
-#define RCLK_Pin GPIO_PIN_10
-#define RCLK_GPIO_Port GPIOB
-#define SER_Pin GPIO_PIN_11
-#define SER_GPIO_Port GPIOB
+#define TIME_LATCH_Pin GPIO_PIN_2
+#define TIME_LATCH_GPIO_Port GPIOB
+#define TEMP_LATCH_Pin GPIO_PIN_10
+#define TEMP_LATCH_GPIO_Port GPIOB
 #define EncBut_Pin GPIO_PIN_15
 #define EncBut_GPIO_Port GPIOA
 #define GREEN_LED_Pin GPIO_PIN_3
@@ -73,8 +73,8 @@ void Error_Handler(void);
 #define BLUE_LED_GPIO_Port GPIOB
 #define RED_LED_Pin GPIO_PIN_5
 #define RED_LED_GPIO_Port GPIOB
-#define Fan_Relay_Pin GPIO_PIN_9
-#define Fan_Relay_GPIO_Port GPIOB
+#define FAN_RELAY_Pin GPIO_PIN_9
+#define FAN_RELAY_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
