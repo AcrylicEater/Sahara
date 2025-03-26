@@ -2696,16 +2696,16 @@
 		(uuid "ae845b84-b29f-4d5c-af84-e228734cb4a1")
 	)
 	(junction
-		(at 57.15 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b15f7ea9-d980-472e-849d-0cfc10170376")
-	)
-	(junction
 		(at 78.74 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b6da268f-ef8c-4ab5-8b7a-866d14cba353")
+	)
+	(junction
+		(at 111.76 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b81fbdc9-78c2-4ab3-bcfd-9c06a5d023af")
 	)
 	(junction
 		(at 33.02 76.2)
@@ -3013,6 +3013,26 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 76.2) (xy 111.76 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b158ae0-bcb6-4240-9f5a-e909f6882f2d")
+	)
+	(wire
+		(pts
+			(xy 111.76 82.55) (xy 118.11 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "501185ef-d6de-4a2f-8595-461c727fe790")
+	)
+	(wire
+		(pts
 			(xy 43.18 48.26) (xy 60.96 48.26)
 		)
 		(stroke
@@ -3123,6 +3143,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 76.2) (xy 111.76 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9659c29a-a428-47b6-8efd-9d2ff78f39bc")
+	)
+	(wire
+		(pts
 			(xy 33.02 76.2) (xy 60.96 76.2)
 		)
 		(stroke
@@ -3203,16 +3233,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 101.6) (xy 57.15 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "decd9d6e-3812-4873-bbb0-45fb3c519082")
-	)
-	(wire
-		(pts
 			(xy 81.28 40.64) (xy 78.74 40.64)
 		)
 		(stroke
@@ -3250,16 +3270,6 @@
 			(type default)
 		)
 		(uuid "f30e0ed5-e599-45f7-b59b-a96fef58bce8")
-	)
-	(wire
-		(pts
-			(xy 57.15 101.6) (xy 60.96 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6fa022f-588a-4a1e-b277-86fe61c7057c")
 	)
 	(wire
 		(pts
@@ -3713,22 +3723,22 @@
 	)
 	(global_label "TempLatch"
 		(shape input)
-		(at 55.88 101.6 180)
+		(at 118.11 82.55 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "e2848594-384e-4d42-a69a-819f136b1e1f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 42.8559 101.6 0)
+			(at 131.1341 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -4613,8 +4623,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 57.15 105.41 0)
-		(mirror y)
+		(at 111.76 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4623,7 +4632,7 @@
 		(fields_autoplaced yes)
 		(uuid "291401e5-ae47-4315-8f7b-c9a89410d334")
 		(property "Reference" "R3"
-			(at 54.61 104.1399 0)
+			(at 114.3 85.0899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4632,7 +4641,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 54.61 106.6799 0)
+			(at 114.3 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4641,7 +4650,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 56.134 105.664 90)
+			(at 112.776 86.614 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4650,7 +4659,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 105.41 0)
+			(at 111.76 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4659,7 +4668,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 57.15 105.41 0)
+			(at 111.76 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5773,8 +5782,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 57.15 109.22 0)
-		(mirror y)
+		(at 111.76 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5783,7 +5791,7 @@
 		(fields_autoplaced yes)
 		(uuid "776251da-58bf-4335-a66b-c52c5a418c67")
 		(property "Reference" "#PWR09"
-			(at 57.15 115.57 0)
+			(at 111.76 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5792,7 +5800,7 @@
 			)
 		)
 		(property "Value" "Earth"
-			(at 57.15 114.3 0)
+			(at 111.76 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5801,7 +5809,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 109.22 0)
+			(at 111.76 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5810,7 +5818,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 109.22 0)
+			(at 111.76 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5819,7 +5827,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 57.15 109.22 0)
+			(at 111.76 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
