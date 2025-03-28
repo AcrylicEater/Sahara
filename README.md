@@ -1,4 +1,4 @@
-#Sahara - diy 3d printer filament dryer
+# Sahara - diy 3d printer filament dryer
 
 This is the hardware and software I designed to convert a cheap food dehydrator into a more intelligent and precisely controlled device, with the aim of drying 3d printer filament.
 
