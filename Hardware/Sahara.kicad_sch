@@ -2720,7 +2720,7 @@
 		(uuid "d55ce166-44f5-4be2-8cf0-ae906acb9b3e")
 	)
 	(junction
-		(at 43.18 48.26)
+		(at 35.56 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dd566922-c258-4698-9b97-cc075f0ba0e0")
@@ -2943,6 +2943,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 53.34) (xy 60.96 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d4b1032-c5c5-4744-bc9c-fc2aa12ab468")
+	)
+	(wire
+		(pts
 			(xy 78.74 40.64) (xy 78.74 43.18)
 		)
 		(stroke
@@ -3033,7 +3043,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 48.26) (xy 60.96 48.26)
+			(xy 35.56 48.26) (xy 60.96 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3063,7 +3073,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 58.42) (xy 43.18 55.88)
+			(xy 35.56 58.42) (xy 35.56 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3173,7 +3183,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 48.26) (xy 43.18 48.26)
+			(xy 29.21 48.26) (xy 35.56 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3860,7 +3870,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 43.18 52.07 0)
+		(at 35.56 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3868,7 +3878,7 @@
 		(dnp no)
 		(uuid "022e4313-5954-4d92-8e07-c1af5c134221")
 		(property "Reference" "C1"
-			(at 46.228 51.054 0)
+			(at 38.608 51.054 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3877,7 +3887,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 46.736 53.086 0)
+			(at 39.116 53.086 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3886,7 +3896,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 44.1452 55.88 0)
+			(at 36.5252 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3895,7 +3905,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 52.07 0)
+			(at 35.56 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3904,7 +3914,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 43.18 52.07 0)
+			(at 35.56 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4693,7 +4703,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 36.83 58.42 0)
+		(at 29.21 58.42 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4703,7 +4713,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d871524-69b3-40e7-9847-a4b56dfe6ccb")
 		(property "Reference" "#PWR04"
-			(at 36.83 64.77 0)
+			(at 29.21 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4712,7 +4722,7 @@
 			)
 		)
 		(property "Value" "Earth"
-			(at 36.83 63.5 0)
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4721,7 +4731,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 58.42 0)
+			(at 29.21 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4730,7 +4740,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 58.42 0)
+			(at 29.21 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4739,7 +4749,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 36.83 58.42 0)
+			(at 29.21 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6050,6 +6060,144 @@
 		)
 	)
 	(symbol
+		(lib_id "power:Earth")
+		(at 48.26 60.96 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ee41a7f-a298-4540-8c66-59a24fbbbacf")
+		(property "Reference" "#PWR086"
+			(at 48.26 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 48.26 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 48.26 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7d4c4450-9f00-420d-9c5f-4ddd985aafe2")
+		)
+		(instances
+			(project "Sahara"
+				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
+					(reference "#PWR086")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 48.26 57.15 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a2d077ab-e8ab-4393-b518-bc8f64c3c78d")
+		(property "Reference" "R23"
+			(at 45.72 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 45.72 58.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 47.244 57.404 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 48.26 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a5f32fc9-1845-448b-a5cf-eb5c7933c7ad")
+		)
+		(pin "2"
+			(uuid "9534c165-2aa7-441f-82d0-669846fe44c0")
+		)
+		(instances
+			(project "Sahara"
+				(path "/1677429e-c497-4bfd-afaa-f24906fcbe1d"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 157.48 20.32 90)
 		(unit 1)
@@ -6317,7 +6465,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 43.18 58.42 0)
+		(at 35.56 58.42 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6327,7 +6475,7 @@
 		(fields_autoplaced yes)
 		(uuid "b26e745e-46e7-4a0c-ba36-b7e85b081e61")
 		(property "Reference" "#PWR06"
-			(at 43.18 64.77 0)
+			(at 35.56 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6336,7 +6484,7 @@
 			)
 		)
 		(property "Value" "Earth"
-			(at 43.18 63.5 0)
+			(at 35.56 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6345,7 +6493,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 58.42 0)
+			(at 35.56 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6354,7 +6502,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 58.42 0)
+			(at 35.56 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6363,7 +6511,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 43.18 58.42 0)
+			(at 35.56 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6931,7 +7079,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 36.83 53.34 90)
+		(at 29.21 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6939,7 +7087,7 @@
 		(dnp no)
 		(uuid "d76abc32-4264-47cd-9a65-1d94cf846c30")
 		(property "Reference" "SW1"
-			(at 25.4 51.562 90)
+			(at 17.78 51.562 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6948,7 +7096,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 25.4 54.102 90)
+			(at 17.78 54.102 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6956,8 +7104,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 31.75 53.34 0)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC7xxJ"
+			(at 24.13 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6966,7 +7114,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 53.34 0)
+			(at 24.13 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6975,7 +7123,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 36.83 53.34 0)
+			(at 29.21 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
